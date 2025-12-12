@@ -1,5 +1,6 @@
 .tools-info {
     width: 124px;
+    height: 359px;
     display: flex;
     flex-direction: column;
 }
@@ -9,33 +10,40 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    margin-top: 15px;
 }
 
 .tools-info__list-item {
     width: 76px;
     border-radius: 6px;
     padding: 16px 4px;
-    background-color: #fff;
+    background-color: #FFFFFF;
     box-sizing: border-box;
     position: relative;
 }
 
 .tools-info__label {
-    padding: 2px;
-    border-radius: 59px;
-    background: #000;
-    color: #fff;
-    font-size: 5px;
     position: absolute;
-    top: -5px; 
+    top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 6px;
+    border-radius: 59px;
+    background: #000000;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 5px;
+    line-height: 142%;
+    white-space: nowrap;
 }
 
 .tools-info__tools-list {
     display: flex;
-    gap: 16px 0;
     flex-wrap: wrap;
+    gap: 16px 0;
 }
 
 .tools-info__tools-list-item {
@@ -45,17 +53,55 @@
     box-sizing: border-box;
 }
 
-
 .tools-info__tools-list-item:nth-child(odd) {
-    justify-content: end;
+    justify-content: flex-end;
     padding-right: 8px;
 }
 
 .tools-info__tools-list-item:nth-child(even) {
-    justify-content: start;
+    justify-content: flex-start;
     padding-left: 8px;
 }
 
 .tools-info__icon {
     height: 100%;
+}
+
+.tools-info__icon--zapier {
+    width: 20px;
+    height: 20px;
+}
+
+.tools-info__icon--webflow {
+    width: 18px;
+    height: 18px;
+}
+
+.tools-info__icon--framer {
+    width: 13px;
+    height: 18.5715px;
+}
+
+.tools-info__icon--wordpress {
+    width: 17px;
+    height: 17px;
+}
+
+.tools-info__icon--chatgpt,
+.tools-info__icon--copilot,
+.tools-info__icon--midjourney {
+    width: 19px;
+    height: 19px;
+}
+
+.tools-info__list-item--design {
+    height: 111px;
+}
+
+.tools-info__list-item--nocode {
+    height: 86px;
+}
+
+.tools-info__list-item--ai {
+    height: 86px;
 }
